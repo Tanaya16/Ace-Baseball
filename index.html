@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ace baseball</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <!--hearder and navbar-->
+    <nav class="navbar">
+        <div class="logoicon">
+            <img src="batball icon white.png" class="icon">
+            <h1 class="logo">Ace baseball</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Our coaches</a></li>
+            <li><button class="btn">Sign up</button></li>
+        </ul>
+        <img src="menuiconwhite.png" class="menu-btn">
+    </nav>
+
+    <header>
+        <div class="header-content">
+            <h1>USA PRIME BASEBALL</h1>
+            <div class="line"></div>
+            <h2>“We are the largest full service amateur baseball organization in the United States”</h2>
+            <a href="#" class="ctn">Join now</a>
+        </div>
+    </header>
+    <!--events-->
+    <section class="events">
+        <div class="title">
+            <h1>Upcoming Events</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="event-info">
+                <div class="e1">
+                    <img src="baseball 1.png" alt="img">
+                    <h4>Batting practice</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quia in nostrum. Ab, voluptas nihil velit totam dolore iusto maxime.</p>
+                </div>
+                <div class="e1">
+                    <img src="baseball 2.png" alt="img">
+                    <h4>Pitching practice</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quia in nostrum. Ab, voluptas nihil velit totam dolore iusto maxime.</p>
+                </div>
+                <div class="e1">
+                    <img src="baseball 3.png" alt="img">
+                    <h4>Try-outs</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet quia in nostrum. Ab, voluptas nihil velit totam dolore iusto maxime.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mt-60 ">
+        <div class="clgbs ">
+            <h1>Explore the college baseball world</h1>
+            <h2>WE HAVE THREE #1 TEAMS IN THE COUNTRY</h2>
+            <img src="Group 1.svg" class="svg1">
+        </div>
+    </section>
+
+    <section>
+        <div class="exp-info ">
+            <div class="exp-left">
+                <h1>Our experts</h1>
+                <div class="line"></div>
+                <ul class="exp-names">
+                    <li>Alex Mayer, National champion '02, UVA</li>
+                    <li>John Brown, National champion '09, VT</li>
+                    <li>Ron Smith, National champion '99, UCLA</li>
+                </ul>
+            </div>
+            <div class="exp-right">
+            <img src="baseball 4.png">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="ftr">
+            <div class="scl-md">
+                <p>
+                    Follow us on:
+                    <div class="scl">
+                        <img src="fb blue icon.png" class="scl1">
+                        <img src="tweeter color icon.png"class="scl2">
+                        <img src="insta color icon.png"class="scl3">
+                    </div>
+                </p>
+            </div>
+            <div class="copy-right">
+                <p>&copy; Ace baseball 2022</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.querySelector('.menu-btn')
+        const navlinks = document.querySelector('.nav-links')
+
+        menuBtn.addEventListener('click',()=>
+        {navlinks.classList.toggle('mobile-menu')})
+    </script>
+</body>
+</html>

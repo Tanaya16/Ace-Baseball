@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(bg.png);
+    background-position:bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*Header*/
+header{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-content{
+    color: white;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 8vmin;
+    font-weight: bold;
+}
+.header-content h2{
+    font-size: 4vmin;
+    margin-bottom: 40px;
+}
+.line{
+    width: 200px;
+    height: 4px;
+    background-color: crimson;
+    margin: 6px auto;
+}
+.ctn{
+    background-color: crimson;
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.ctn:hover{
+    background-color: wheat;
+    color: crimson;
+}
+/*Navbar*/
+.navbar{
+    position:absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: wheat;
+    position: sticky;
+    background-color: rgba(255, 255, 255, 0.203);
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+}
+.nav-links li{
+    margin: 0 30px;
+}
+.nav-links li:hover{
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    text-underline-offset: 8px;
+    color: white;
+}
+.logo{
+ font-size: 1.5rem;
+ font-weight: 500;
+ padding-left: 5px;
+}
+.icon{
+    height: 25px;
+    
+}
+.logoicon{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+.btn{
+    background-color: crimson;
+    padding: 4px 10px;
+    border-radius: 10px;
+}
+.btn:hover{
+    background-color: wheat;
+    color: crimson;
+}
+.menu-btn{
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 30px;
+    cursor: pointer;
+    display: none;
+}
+/*events*/
+section{
+    width: 80%;
+    margin: 80px auto;
+}
+.title{
+    text-align: center;
+    font-size: 6vmin;
+    color: white;
+    font-weight: bold;
+    
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.event-info{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.e1{
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+    cursor: pointer;;
+}
+.e1:hover{
+    border: solid crimson 1px;
+    color: wheat;
+}
+.e1 h4{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.clgbs{
+    color: white;
+    text-align: center;
+}
+.clgbs h1{
+    font-size: 6vmin;
+    font-weight: bold;
+}
+.clgbs h2{
+    font-size: 4vmin;
+    color: wheat;
+    margin: 10px auto;
+}
+.svg1{
+    width: 400px;
+    margin: 70px auto;
+}
+.exp-info{
+    margin: 200px auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.exp-info h1{
+    font-size: 2.6rem;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+.exp-info ul li{
+    color: wheat;
+    font-size: 1.5rem;
+    text-align: center;
+}
+.exp-names{
+    color: white;
+}
+.exp-right{
+    width: 450px;
+}
+.ftr{
+    color: white;
+    background-color: black;
+    padding: 60px 30px;
+}
+.scl-md{
+    display: flex;
+    float: left;
+    gap: 20px;
+}
+.scl-md p{
+    font-size: large;
+    font-weight: 500;
+}
+.scl{
+    display: flex;
+    height: 30px;
+    gap: 10px;
+}
+.copy-right{
+    float: right;
+    text-align: center;
+}
+@media screen and (max-width:850px)
+{
+    .navbar{
+        padding: 0;
+    }
+    .nav-links{
+        flex-direction: column;
+        width: 100vh;
+        height: 100vh;
+        justify-content: center;
+        background: crimson;
+        border-bottom-left-radius: 100px;
+        color: white;
+        margin-top: -900px;
+        transition:all 0.5s ease;
+    }
+    .mobile-menu{
+        margin-top: 0px;
+    }
+    .nav-links li{
+        margin: 30px auto;
+    }
+    .logo{
+        visibility:  hidden;
+    }
+    .menu-btn{
+        display: block;
+    }
+    .event-info{
+        flex-direction: column;
+    }
+    .exp-info{
+        flex-direction: column;
+    }
+    
+    
+}
